@@ -3,5 +3,7 @@ korkeus = float(input('Anna suorakulmion korkeus'))
 
 piiri = (kanta * 2) + (korkeus * 2)
 A = kanta * korkeus
-print('Suorakulmion pinta-ala on' + {A})
-print('Suorakulmion piiri on' + {piiri})
+print(f'Pinta-ala on {A}')
+print(f'Piiri on {piiri}')
+
+
