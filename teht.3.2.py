@@ -1,4 +1,3 @@
-# kysyy käyttäjältä laivan hyttiluokan (LUX, A, B, C) ja tulostaa sen sanallisen kuvauksen alla olevan luettelon mukaisesti
 hyttiluokka = input('Anna laivan hyttiluokka ')
 if hyttiluokka == 'LUX':
     print ('LUX on parvekkeellinen hytti yläkannella.')
