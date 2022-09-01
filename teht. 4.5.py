@@ -5,8 +5,10 @@
 userInput = input('Sano luku: ')
 maxValue = minValue = int(userInput)
 
-while userInput != '':
+while True:
     userInput = input('Sano luku: ')
+    if userInput == ' ':
+        break
     userInputInt = int(userInput)
     if userInputInt < minValue:
         minValue = userInputInt
