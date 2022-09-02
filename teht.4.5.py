@@ -6,18 +6,17 @@
 
 userID = input('Anna käyttäjätunnuksesi: ')
 userPassword = input('Anna salasanasi: ')
-ID = 'python'
-password = 'rules'
 count = 0
-while (count < 5) and (userID != ID and userPassword != password) and (userID != ID or userPassword != password):
+while (count < 4) and (userID != 'python' and userPassword != 'rules') or (userID != 'python' or userPassword != 'rules'):
     count += 1
     print('Yritä uudelleen')
     userID = input('Anna käyttäjätunnuksesi: ')
     userPassword = input('Anna salasanasi: ')
-    if userID == ID and userPassword == password:
+    if (userID == 'python' and userPassword == 'rules') or count >= 4:
         break
-print('Tervetuloa')
-
-
+if userID == 'python' and userPassword == 'rules':
+    print('Tervetuloa')
+else:
+    print('Pääsy evätty')
 
 
