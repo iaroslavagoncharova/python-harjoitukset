@@ -3,12 +3,12 @@
 #Lopuksi ohjelma tulostaa kaupunkien nimet yksi kerrallaan allekkain samassa järjestyksessä kuin ne syötettiin.
 #käytä for-toistorakennetta nimien kysymiseen ja for/in toistorakennetta niiden läpikäymiseen.
 
-cities[ ]
-strInput = input'Anna kaupungin nimi'
+cities = []
 count = 0
 while count < 5:
-    print('Anna kaupungin nimi')
-cities.append
-for city in cities[0:5]
-    print(city)
+    strInput = int(input('Anna kaupungin nimi: '))
+    count += 1
+    cities.append(strInput)
+else:
+    print(cities[0:5])
 
