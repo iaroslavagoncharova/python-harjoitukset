@@ -2,9 +2,12 @@
 #Esimerkiksi luku 13 on alkuluku, koska se voidaan jakaa vain luvuilla 1 ja 13 siten, että jako menee tasan.
 #Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan jakaa tasan myös luvulla 3 tai luvulla 7.
 
-userInput = int(input('Anna kokonaisluku: '))
-luku = userInput
-if luku % 1 == 0 and luku % luku == 0:
-    print('Se on alkuluku')
+luku = int(input('Anna kokonaisluku: '))
+
+for i in range(2, luku):
+    if luku % i == 0:
+        print('Se ei ole alkuluku')
+        break
 else:
-    print('Se ei ole alkuluku')
+    print('Se on alkuluku')
+
