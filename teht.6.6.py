@@ -16,10 +16,10 @@ def yksikköhinta2(halkaisija, hinta):
 halkaisija1 = int(input('Anna ekan pizzan halkaisija: '))
 pizzan_hinta1 = int(input('Anna ekan pizzan hinta: '))
 halkaisija2 = int(input('Anna tokan pizzan halkaisija: '))
-pizzan_hinta2 = int(input('Anna tokan pizzan hinta'))
+pizzan_hinta2 = int(input('Anna tokan pizzan hinta: '))
 loppuhinta1 = yksikköhinta1(halkaisija1, pizzan_hinta1)
 loppuhinta2 = yksikköhinta2(halkaisija2, pizzan_hinta2)
 if loppuhinta1 > loppuhinta2:
-        print(f'Toka pizza on edullisempi, koska se maksaa {loppuhinta2:.2f} euroa/neliömetri')
+        print('Toka pizza on edullisempi')
 elif loppuhinta2 > loppuhinta1:
-        print(f'Eka pizza on edullisempi, koska se maksaa {loppuhinta1:.2f} euroa/neliömetri')
+        print('Eka pizza on edullisempi')
