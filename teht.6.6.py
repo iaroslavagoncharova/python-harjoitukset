@@ -4,13 +4,22 @@
 #kumpi pizza antaa paremman vastineen rahalle (eli kummalla on alhaisempi yksikköhinta).
 import math
 def yksikköhinta1(halkaisija, hinta):
-        a = (halkaisija * 0.0001) ** 2 / 4 * math.pi
-        hinta1 = pizzan_hinta1 / a
+        a = (halkaisija / 2)** 2 * math.pi
+        hinta1 = hinta / a
         return hinta1
+
+def yksikköhinta2(halkaisija, hinta):
+        a = (halkaisija / 2) ** 2 * math.pi
+        hinta2 = hinta / a
+        return hinta2
 
 halkaisija1 = int(input('Anna ekan pizzan halkaisija: '))
 pizzan_hinta1 = int(input('Anna ekan pizzan hinta: '))
-#halkaisija2 = int(input('Anna tokan pizzan halkaisija: '))
-#pizzan_hinta2 = int(input('Anna tokan pizzan hinta'))
+halkaisija2 = int(input('Anna tokan pizzan halkaisija: '))
+pizzan_hinta2 = int(input('Anna tokan pizzan hinta'))
 loppuhinta1 = yksikköhinta1(halkaisija1, pizzan_hinta1)
-print(f'Eka pizza maksaa {loppuhinta1:.2f} euroa/neliömetri')
+loppuhinta2 = yksikköhinta2(halkaisija2, pizzan_hinta2)
+if loppuhinta1 > loppuhinta2:
+        print(f'Toka pizza on edullisempi, koska se maksaa {loppuhinta2:.2f} euroa/neliömetri')
+elif loppuhinta2 > loppuhinta1:
+        print(f'Eka pizza on edullisempi, koska se maksaa {loppuhinta1:.2f} euroa/neliömetri')
