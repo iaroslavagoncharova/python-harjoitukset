@@ -20,9 +20,9 @@ def löytä_lentoasemat(maakoodi):
     tulos = kursori.fetchall()
     if kursori.rowcount > 0:
         for rivi in tulos:
-            print(f'Koodilla {maakoodi} löytyy{rivi[1]}, {rivi[0]}')
+            print(f'Maakoodilla {maakoodi} on {rivi[1]}, {rivi[0]}')
     else:
-        print(f'Koodilla {maakoodi} ei löytyy mitään')
+        print(f'K´Maakoodilla {maakoodi} ei löytyy mitään')
     return
 
 maakoodi = input('Anna maakoodi: ')
